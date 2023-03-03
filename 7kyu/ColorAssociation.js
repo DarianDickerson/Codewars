@@ -18,3 +18,13 @@ function colourAssociation(array){
     
     return res
 }
+
+
+//Editied 
+function colorAssociation(array){
+    return array.map(c => {
+      let ob = new Object()
+      ob[c[0]] = c[1]
+      return ob
+    })
+}
